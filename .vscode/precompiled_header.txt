@@ -1,0 +1,2 @@
+HEADER="/opt/homebrew/Cellar/gcc/16.2.0/include/c++/16/aarch64-apple-darwin23/bits/stdc++.h"
+g++-16 -std=c++17 -O2 -x c++-header "$HEADER" -o "$HEADER.gch"

@@ -1,0 +1,25 @@
+[
+    {
+        "key": "cmd+shift+r",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.focusFirstEditorGroup",
+                {
+                    "command": "workbench.action.terminal.sendSequence",
+                    "args": {
+                        // "text": "fast solve.cpp < input.txt\u000D"
+                        // g++-16 -std=c++17 "$1.cpp" -o "$1" && ./"$1" - add this function on zshrc
+                        "text": "fastp ${fileBasenameNoExtension} < input.txt\u000D"
+                    }
+                }
+            ]
+        },
+        "when": "editorTextFocus || terminalFocus"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.terminal.focus",
+        "when": "terminalHasBeenCreated || terminalProcessSupported"
+    }
+]
