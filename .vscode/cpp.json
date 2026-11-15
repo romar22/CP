@@ -5,6 +5,12 @@
             "#include <bits/stdc++.h>",
             "using namespace std;",
             "",
+            "#ifndef ONLINE_JUDGE",
+            "    #include \"debug.h\"",
+            "#else",
+            "    #define debug(x) ((void)0)",
+            "#endif",
+            "",
             "void solve() {",
             "    $0",
             "}",
@@ -22,6 +28,6 @@
             "    return 0;",
             "}"
         ],
-        "description": "Template"
+        "description": "Competitive Programming Template with Debug"
     }
 }
